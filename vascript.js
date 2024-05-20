@@ -8,15 +8,15 @@ function getComputerChoice()
    
    if (val<=1) {
     choice="rock"
-    console.log("comper chose", choice);
+    console.log("computer chose", choice);
    }
     else if (1<val && val<=2){
         choice="paper"
-        console.log("comper chose", choice);
+        console.log("computer chose", choice);
     }
     else  {
         choice="scissors"
-        console.log("comper chose", choice);
+        console.log("computer chose", choice);
     }
     return choice;
 }
@@ -109,13 +109,22 @@ playgame();
 
 console.log('humanscore', humanScore);
 console.log('computerscore', comptuerScore);
+let result;
+function winner(result) {
 
 if (humanScore>comptuerScore) {
-    console.log('you win human');
+   console.log('you win human');
+   result='you win human'
 }
 else if (humanScore<comptuerScore) {
     console.log('I win always');
+    result='I always win'
 }
 else {
     console.log('Alas it\'s a tie')
+    result='Hmmm it is a tie'
 }
+return result;
+}
+
+alert(winner());
