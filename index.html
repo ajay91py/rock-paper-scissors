@@ -4,11 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
     
     
 </head>
 <body>
    <h1 style="text-align: center;"> Rock Paper Scissors</h1>
-   <script type="text/javascript" src="vascript.js"> </script>
+   <h3>First to five wins</h3>
+   <div id="Hchoice"> 
+    <button onclick="playRound('rock')"> 👊</button>
+   <button onclick="playRound('paper')">📄</button>
+   <button onclick="playRound('scissors')">✂️</button>
+   <button class="emoji"> Computer chose: </button>
+</div>
+<div class="roundwinner"> Round won by:</div>
+<div class="comp-score">
+   Computer score:
+</div>
+<div class="playerscore">
+   Player score:
+</div>
+<div class="result">
+   Result:
+</div>
+
+   <!-- <script type="text/javascript" src="vascript.js"> </script> -->
+   <script type="text/javascript" src="rps-ui.js"> </script>
 </body>
-</html>
+</html>  
